@@ -5,6 +5,7 @@
   Time: 09:09
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -22,9 +23,9 @@ ${requestScope.besked}
 <br>
 
 <form action="OpretServlet" method="post">
-    <label for="fname">First name:</label><br>
+    <label for="fname">Brugernavn</label><br>
     <input type="text" id="fname" name="navn"><br>
-    <label for="lname">Last name:</label><br>
+    <label for="lname">Kode</label><br>
     <input type="text" id="lname" name="kodeord"><br><br>
     <input type="submit" value="Opret">
 </form>

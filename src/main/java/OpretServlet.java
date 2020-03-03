@@ -16,12 +16,13 @@ public class OpretServlet extends HttpServlet {
         String navn = request.getParameter("navn");
         String kodeord = request.getParameter("kodeord");
 
+        //tjekker om brugnavnet allereder bliver brugt
         if (((Map<String, String>) sc.getAttribute("brugerMap")).containsKey(navn)) {
 
             request.setAttribute("besked", "Navnet du angav er allerede ibrug");
             request.getRequestDispatcher("WEB-INF/OpretBruger.jsp").forward(request, response);
         }
-
+        // opretter en bruger
         ((Map<String, String>) sc.getAttribute("brugerMap")).put(navn, kodeord);
 
         request.setAttribute("besked","Du er nu oprettet og er klar til at logge ind");

@@ -7,11 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeb0582-4339-4f3a-b6b4-26496eb0ed02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpretServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/OpretBruger.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OpretServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OpretServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Huskeliste.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Huskeliste.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/OpretBruger.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/OpretBruger.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583180767364</updated>
       <workItem from="1583180777473" duration="1682000" />
-      <workItem from="1583220395423" duration="3793000" />
+      <workItem from="1583220395423" duration="4988000" />
     </task>
     <servers />
   </component>

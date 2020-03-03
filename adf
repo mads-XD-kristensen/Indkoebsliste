@@ -1,0 +1,29 @@
+[33mcommit bd0e746effab5892841f8ddd88036a52dcbe1301[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: mads-XD-kristensen <mads-XD-kristensen@users.noreply.github.com>
+Date:   Tue Mar 3 09:52:44 2020 +0100
+
+    så er der lavet noget admin
+
+[33mcommit add48ef6fd92ffce6eb136684f3e3d753e074197[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: mads-XD-kristensen <mads-XD-kristensen@users.noreply.github.com>
+Date:   Tue Mar 3 09:31:25 2020 +0100
+
+    nu kan vi oprette en bruger
+
+[33mcommit 1f16042022692f229562f0dad438b2225dc36f03[m
+Author: mads-XD-kristensen <mads-XD-kristensen@users.noreply.github.com>
+Date:   Tue Mar 3 09:06:42 2020 +0100
+
+    login er sgu nok ok
+
+[33mcommit aa3c0cf0498a28ebbd5f1dc4cc74cacd725a6169[m
+Author: mads-XD-kristensen <mads-XD-kristensen@users.noreply.github.com>
+Date:   Mon Mar 2 21:53:04 2020 +0100
+
+    Har oprettet login serveltten
+
+[33mcommit ccd8d7e18de2ea30a108d838ce81bc7fed14b3a2[m
+Author: mads-XD-kristensen <mads-XD-kristensen@users.noreply.github.com>
+Date:   Mon Mar 2 21:41:51 2020 +0100
+
+    Starten på det hele

@@ -11,8 +11,8 @@
     <title>Huskeliste</title>
 </head>
 <body>
+Velkommen til din huskeliste
 
-Du har nu adgang til din huskeliste
 
 
 </body>

@@ -16,6 +16,7 @@
 <br>
 <br>
 <br>
+${sessionScope.besked}
 ${requestScope.besked}
 <br>
 <form action="LoginServlet" method="post">

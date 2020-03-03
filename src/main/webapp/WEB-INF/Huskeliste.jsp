@@ -12,8 +12,8 @@
     <title>Din Kurv</title>
 </head>
 <body>
-<h1>Velkommen til din Kurv</h1>
-
+<h1>Velkommen til din Kurv</h1><br>
+${sessionScope.besked}
 
 
 </body>

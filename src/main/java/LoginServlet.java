@@ -7,7 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 @WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {
@@ -31,35 +33,50 @@ public class LoginServlet extends HttpServlet {
         }
 
 
+        if (((Set<String>) sc.getAttribute("aktiveBrugere")) == null) {
+            Set<String> aktiveBrugere = new HashSet<>();
+            sc.setAttribute("aktiveBrugere", aktiveBrugere);
+
+        }
 
 
+        if (!(session.getAttribute("besked") == null)) {
+            request.getRequestDispatcher("WEB-INF/Huskeliste.jsp").forward(request, response);
+        }
 
 
         if (!((Map<String, String>) sc.getAttribute("brugerMap")).containsKey(navn)) {
 
 
-
-            request.setAttribute("besked","Opret dig som bruger");
-            request.getRequestDispatcher("WEB-INF/OpretBruger.jsp").forward(request,response);
+            request.setAttribute("besked", "Opret dig som bruger");
+            request.getRequestDispatcher("WEB-INF/OpretBruger.jsp").forward(request, response);
         }
 
 
         if (((Map<String, String>) sc.getAttribute("brugerMap")).get(navn).equalsIgnoreCase(kodeord)) {
 
-            if (navn.equalsIgnoreCase("admin")){
+            if (navn.equalsIgnoreCase("admin")) {
 
-            request.getRequestDispatcher("WEB-INF/admin.jsp").forward(request,response);
+                request.getRequestDispatcher("WEB-INF/admin.jsp").forward(request, response);
 
             }
 
 
-            session.setAttribute("besked", "du er logget ind med navnet: "+navn);
-            request.getRequestDispatcher("/WEB-INF/Huskeliste.jsp").forward(request,response);
+            if (!((Set<String>) sc.getAttribute("aktiveBrugere")).contains(navn)) {
+                ((Set<String>) sc.getAttribute("aktiveBrugere")).add(navn);
+
+                session.setAttribute("besked", "du er logget ind med navnet: " + navn);
+                session.setAttribute("navn", navn);
+
+                request.getRequestDispatcher("/WEB-INF/Huskeliste.jsp").forward(request, response);
+            }
+
+
         }
 
         //todo gå til login dvs. index siden
-        request.setAttribute("besked","din kode var forkert, prøv igen");
-       request.getRequestDispatcher("index.jsp").forward(request,response);
+        request.setAttribute("besked", "Noget gik galt, prøv igen");
+        request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

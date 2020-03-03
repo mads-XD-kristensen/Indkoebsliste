@@ -25,8 +25,8 @@ public class OpretServlet extends HttpServlet {
         // opretter en bruger
         ((Map<String, String>) sc.getAttribute("brugerMap")).put(navn, kodeord);
 
-        request.setAttribute("besked","Du er nu oprettet og er klar til at logge ind");
-        request.getRequestDispatcher("index.jsp").forward(request,response);
+        request.setAttribute("besked", "Du er nu oprettet og er klar til at logge ind");
+        request.getRequestDispatcher("index.jsp").forward(request, response);
 
 
     }

@@ -14,6 +14,38 @@
 <body>
 <h1>Velkommen til din Kurv</h1><br>
 ${sessionScope.besked}
+<br>
+<br>
+
+<form action="AddItemServlet" method="post">
+    <label for="fname">Skriv vare</label><br>
+    <input type="text" id="fname" name="vareNavn"><br>
+
+    <input type="submit" value="Tilføj">
+</form>
+<br>
+<br>
+${requestScope.besked}
+<br>
+<br>
+<c:forEach var="element" items="${sessionScope.basket}">
+    ${element}<br>
+
+
+</c:forEach>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<form action="LogoutServlet" method="post">
+    <%--<label for="fname">Skriv vare</label><br>
+    <input type="text" id="fname" name="vareNavn"><br>--%>
+
+    <input type="submit" value="Logout">
+</form>
 
 
 </body>

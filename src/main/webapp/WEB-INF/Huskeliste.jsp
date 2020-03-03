@@ -9,10 +9,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Huskeliste</title>
+    <title>Din Kurv</title>
 </head>
 <body>
-<h1>Velkommen til din huskeliste</h1>
+<h1>Velkommen til din Kurv</h1>
 
 
 
